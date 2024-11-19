@@ -1,0 +1,21 @@
+﻿<Window x:Class="задание4.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:задание4"
+        mc:Ignorable="d"
+        Title="Window4" Height="450" Width="800">
+    <Grid>
+        <Label Content="Заработная плата:" VerticalAlignment="Top" Margin="0,0,672,0" Height="40" />
+        <TextBox Name="SalaryTextBox" VerticalAlignment="Top" Margin="150,0,0,0" Height="40"/>
+
+        <Label Content="Выслуга лет:" VerticalAlignment="Top" Margin="10,56,672,0" Height="38" />
+        <TextBox Name="YearsTextBox" VerticalAlignment="Top" Margin="150,56,0,0" Height="38" />
+
+        <Button Content="Рассчитать премию" VerticalAlignment="Top" Margin="10,148,-10,0" Click="CalculateBonus_Click" Height="36" Background="RosyBrown"/>
+
+        <TextBlock Name="ResultTextBlock" VerticalAlignment="Top" Margin="0,189,0,0" FontSize="16" Height="28"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="719,329,0,0" VerticalAlignment="Top" Click="Close_Click" Width="61" Height="32" Background="Red"/>
+    </Grid>
+</Window>
